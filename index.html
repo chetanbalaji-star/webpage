@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Homepage</title>
+
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=NTR' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> My portfolio <span>page</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#mainCarousel">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <style>
+    
+    	.navbar-default {
+    		background-color: transparent;
+    		border-color: transparent;
+    		-webkit-transition: all 0.5s ease 0s;
+  			-o-transition: all 0.5s ease 0s;s
+  			transition: all 0.5s ease 0s;
+    	}
+    	
+    	.navbar-nav { 
+    		margin-top: 40px;
+    		float: right;
+    	}
+    	
+    	@media screen and (max-width: 767px) {
+    	.navbar-nav {
+    		float: none;
+    		text-align: center;
+    		background: rgba(230, 233, 244, 0.5);
+    	}
+    	}
+    	
+    	.navbar-default .navbar-brand {
+    		margin-top: 40px;
+    		font-size: 28px;
+    		font-family: 'Righteous', cursive;
+    		color: #d795f3;
+    		letter-spacing: 1px;
+    		-moz-transition:color .5s ease-in;
+   			-o-transition:color .5s ease-in;
+    		-webkit-transition:color .5s ease-in;
+    	}
+    	
+    	.navbar-default .navbar-brand span {
+    		color: #c9e2f6;
+    		-moz-transition:color .5s ease-in;
+   			-o-transition:color .5s ease-in;
+    		-webkit-transition:color .5s ease-in;
+    	}
+    	
+    	@media screen and (max-width: 400px) {
+    	.navbar-default .navbar-brand {
+    		font-size: 22px;
+    	}
+    	}
+    	
+    	.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand span:hover {
+    		color: #aae2f5;
+    	}
+    	
+    	.navbar-default .navbar-nav>li>a {
+    		color: #fff;
+    		font-size: 14px;
+    		font-family: 'Noto Sans', sans-serif;
+    		text-transform: uppercase;
+    		letter-spacing: 1px;
+    	}
+    	
+    	.navbar-default .navbar-nav>li>a:hover {
+    		color: #0d0e22;
+    	}
+    	
+    	.navbar-default .navbar-nav>li>a:focus {
+    		color: #3c485107;
+    	}
+    	
+    	.navbar-default .navbar-toggle {
+    		margin-top: 40px;
+    		border: none;
+    	}
+    	
+		.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+			background: none;
+		}
+    	
+    	.navbar-default .navbar-toggle .icon-bar {
+    		height: 4px;
+    		width: 28px;
+    		background: #141e25;
+		}
+    	
+    	.navbar-default.shrink {
+    		background:rgba(25, 33, 60, 0.8)
+		}
+		
+		.navbar-default.shrink .navbar-nav {
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		
+		.navbar-default.shrink .navbar-brand {
+			margin-top: 20px;
+		}
+		
+		.navbar-default.shrink .navbar-toggle {
+			margin-top: 25px;
+		}
+
+    
+    </style>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="mainCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+            <div class="slider_overlay"></div>
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/chetan.jpg');">
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Hi, This is M.CHETAN BALAJI</h1>
+                            <h3></h3>
+                        </hgroup>
+                        <button class="btn btn-hero btn-lg" role="button">HIRE ME</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+
+            <div class="slider_overlay"></div>
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/slide2.jpg');">
+                    <div class="hero">
+                        <hgroup>
+							<h1>this is my first web page design</h1>
+                            <h2>i am interested in front end developing.</h2>
+                            <h3>html,css,javascript,react,Angularjs.</h3>
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+            <div class="item">    
+            <div class="slider_overlay"></div>
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/slide3.jpg');">
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Do It Anyway</h1>
+                            <h3>This Is My Motto</h3>
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#mainCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+    
+    <div id="about">
+    	<div class="container">
+    		<div class="text">
+    			<h2>About Me</h2>
+    			<hr>
+    			<p> Hi there! I'm Chetan, a passionate and dedicated frontend developer with a keen eye for design and user experience.
+
+					💻 I specialize in crafting visually stunning and highly interactive websites using modern technologies like HTML, CSS, and JavaScript. My journey into the world of frontend development has been driven by a deep love for creating seamless and intuitive digital experiences.
+					
+					📚 What I bring to the table:
+					
+					Proficiency in core frontend technologies: HTML5, CSS3, JavaScript (ES6+)
+					
+					Frameworks & Libraries: React.js, Angular, and Vue.js
+					
+					Responsive Design: Ensuring websites look great on all devices
+					
+					Version Control: Git for efficient collaboration and code management
+					
+					🎨 Why I love what I do: Bringing ideas to life through code is my greatest passion. I thrive on solving complex problems, continually learning, and pushing the boundaries of what web technologies can achieve.
+					
+					🌟 A little more about me:
+					
+					Hobbies: When I'm not coding, you can find me exploring the latest tech trends, working on personal projects, or enjoying a good book.
+					
+					Goals: To become a leading expert in frontend development and contribute to innovative projects that make a difference.</p>
+			</div>
+
+        <div class="col-md-6">
+            <!-- begin panel group -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                
+                <!-- panel 1 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingOne"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4 class="panel-title">My Css Design</h4>
+                        </div>
+                    </span>
+                    
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                        <!-- Tab content goes here -->
+                        <p> Selectors and Specificity: Knowing how to target HTML elements using various selectors (class, id, attribute, pseudo-classes) and understanding specificity rules to apply styles correctly.
+							Box Model: Understanding thse box model, which includes margins, borders, padding, and content. This is crucial for controlling layout and spacing.
+							
+							Flexbox and Grid Layout: Using Flexbox and CSS Grid to create flexible, responsive layouts. These tools allow for the easy arrangement of elements on a page, even with complex designs.
+							
+							Responsive Design: Creating designs that work well on different devices and screen sizes using media queries, fluid grids, and responsive units (like percentages, vw, vh).
+							
+							Typography: Styling text using properties like font-family, font-size, font-weight, line-height, letter-spacing, and text-align. This includes understanding web-safe fonts and using web fonts effectively.
+							
+							CSS Variables (Custom Properties): Using CSS variables to create reusable values, making it easier to maintain and update styles.
+							
+							Animations and Transitions: Adding animations and transitions to enhance user experience. This includes keyframes, animation properties, and transition properties.</p>
+                        </div>
+						
+                    </div>
+                </div> 
+                <!-- / panel 1 -->
+                
+                <!-- panel 2 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="panel-title collapsed">Efficient Code of css</h4>
+                        </div>
+                    </span>
+
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                        <!-- Tab content goes here -->
+                        <p>Minimize CSS Files
+							Remove unused CSS: Use tools like Purify CSS or Unused CSS to eliminate styles not used in your HTML.
+							
+							Minify CSS: Tools like CSSNano or clean-css can reduce the file size by removing unnecessary whitespace and comments.
+							
+							2. Use Shorthand Properties
+							Combine multiple properties into shorthand versions. For example, instead of:
+							
+							css
+							padding-top: 10px;
+							padding-right: 15px;
+							padding-bottom: 10px;
+							padding-left: 15px;
+							Use:
+							
+							css
+							padding: 10px 15px;</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- / panel 2 -->
+                
+                <!--  panel 3 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingThree"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4 class="panel-title">My Interest in Css</h4>
+                        </div>
+                    </span>
+
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                          <!-- tab content goes here -->
+                        <p>Hey  i am Chetan! That’s awesome to have interest in CSS (Cascading Style Sheets).It is a powerful tool for creating visually appealing and well-structured web page.It is animations, layouts, responsive design.I can share some tips, tricks, or even fun project ideas to help you dive deeper into CSS! 😊</p>
+                          </div>
+                        </div>
+                      </div>
+            	</div>
+             </div> 
+             
+   	 		 <div class="col-md-6">
+    			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+					<ol class="carousel-indicators">
+			  			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			    		<li data-target="#carousel" data-slide-to="1"></li>
+			    		<li data-target="#carousel" data-slide-to="2"></li>
+			    		<li data-target="#carousel" data-slide-to="3"></li>
+			    		<li data-target="#carousel" data-slide-to="4"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+			    		<div class="item active">
+			    			<img src="images/web2.jpg" alt="First slide">
+			    		</div>
+			    		<div class="item">
+			    			<img src="images/app2.jpg" alt="Second slide">
+			    		</div>
+			    		<div class="item">
+			    			<img src="images/app1.jpg" alt="Third slide">
+			    		</div>
+			    		<div class="item">
+			    			<img src="images/graphic1.jpg" alt="Third slide">
+			    		</div>
+			    		<div class="item">
+			    			<img src="images/graphic2.jpeg" alt="Third slide">
+			    		</div>
+					</div>
+				</div>
+			</div>
+             
+        </div>
+    </div>
+    
+    
+    <div id="portfolio">
+    	<div class="container">
+    		<h2>My Portfolio</h2>
+    		<p>Entry-level Front-End Developer with a strong foundation in HTML, CSS, JavaScript, and modern front-end frameworks like React. Passionate about creating responsive and user-friendly web applications. Eager to apply problem-solving skills and learn new technologies to contribute to a collaborative development team and build high-quality digital solutions</p>
+      			<div class="portfolioFilter">  
+        			<ul class="Portfolio-nav wow fadeIn delay-02s">
+        				<li><a href="#" data-filter="*" class="current" >All</a></li>
+            			<li><a href="#" data-filter=".webdesign" >Web design</a></li>
+            			<li><a href="#" data-filter=".appdevelopment" >App Development</a></li>
+            			<li><a href="#" data-filter=".graphicdesign" >Graphic Design</a></li>
+        			</ul>
+       			</div> 
+    	</div>
+    	
+       		<div class="portfolioContainer">
+            	<div class=" Portfolio-box appdevelopment">
+                	<a href="#"><img src="images/app1.jpg" alt=""></a>	
+                </div>
+                <div class="Portfolio-box webdesign">
+                	<a href="#"><img src="images/image1.jpeg" alt=""></a>	
+                </div>
+                <div class=" Portfolio-box appdevelopment">
+                	<a href="#"><img src="images/app2.jpg" alt=""></a>	
+                </div>
+                <div class=" Portfolio-box webdesign" >
+                	<a href="#"><img src="images/web2.jpg" alt=""></a>	
+                </div>
+                <div class=" Portfolio-box graphicdesign">
+                	<a href="#"><img src="images/graphic1.jpg" alt=""></a>	
+                </div>
+                <div class=" Portfolio-box graphicdesign">
+                	<a href="#"><img src="images/graphic2.jpeg" alt=""></a>	
+                </div>
+    		</div>
+    	
+    </div>
+    
+    
+    <div id="blog">
+    	<div class="container">
+    		<h2>Frontend <span>Languages</span> Info</h2>
+    		<hr>
+    		<div class="carousel slide" id="myCarousel">
+        		<div class="carousel-inner">
+           			<div class="item active">
+            		 	<ul class="thumbnails">
+                        	<li class="col-sm-4">
+    							<div class="fff">
+									<div class="thumbnail">
+										<a href="#"><p>the html info</p></a>
+									</div>
+									<div class="caption">
+										<h4>the html</html></h4>
+										<p> it is the basic language for the frontend programming.</p>
+										<a class="btn btn-mini" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+									</div>
+                           	 	</div>
+                        	</li>
+                        	<li class="col-sm-4">
+								<div class="fff">
+									<div class="thumbnail">
+										<a href="#"><p>the css info</p></a>
+									</div>
+									<div class="caption">
+										<h4>the css</h4>
+										<p>the css has been used for the shaping and styling of the data.</p>
+										<a class="btn btn-mini" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+									</div>
+                            	</div>
+                        	</li>
+                        	<li class="col-sm-4">
+								<div class="fff">
+									<div class="thumbnail">
+										<a href="#"><p>the js info</p></a>
+									</div>
+									<div class="caption">
+										<h4>the javascript</h4>
+										<p>the javascript language decide the character  of the project.</p>
+										<a class="btn btn-mini" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+									</div>
+                            	</div>
+                        	</li>
+                    	</ul>
+             		</div><!-- /Slide1 --> 
+            		<div class="item">
+                    	<ul class="thumbnails">
+                       		<li class="col-sm-4">
+								<div class="fff">
+									<div class="thumbnail">
+										<a href="#"><p>the html blog</p></a>
+									</div>
+									<div class="caption">
+										<h4>html </h4>
+										<p>the html is used for the structure of the project.</p>
+										<a class="btn btn-mini" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+									</div>
+                            	</div>
+                        	</li>
+                        	<li class="col-sm-4">
+								<div class="fff">
+									<div class="thumbnail">
+										<a href="#"><p>the css blog </p></a>
+									</div>
+									<div class="caption">
+										<h4>css</h4>
+										<p>the css has the styling layouts of the project.</p>
+										<a class="btn btn-mini" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+									</div>
+                            	</div>
+                        	</li>
+                        	<li class="col-sm-4">
+								<div class="fff">
+									<div class="thumbnail">
+										<a href="#"> <p>the js blog </p></a>
+									</div>
+									<div class="caption">
+										<h4>java script</h4>
+										<p>the language has been used for wide range of applications.</p>
+										<a class="btn btn-mini" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+									</div>
+                            	</div>
+                        	</li>
+                    	</ul>
+            		</div><!-- /Slide2 --> 
+        		</div>
+        
+       
+	   		<nav>
+				<ul class="control-box pager">
+					<li><a data-slide="prev" href="#myCarousel" class=""><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+					<li><a data-slide="next" href="#myCarousel" class=""><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+				</ul>
+			</nav>
+	   		<!-- /.control-box -->   
+                              
+   	 		</div><!-- /#myCarousel -->
+    	</div>
+    </div>
+    
+    
+    <div id="contact">
+    	<div class="container">
+    		<h2>Contact Me</h2>  
+    		<p>u can contact me in my instagram and u can also follow me in my facebook page.
+				@chetan balaji/chetan web.
+			</p>
+    		<div class="col-md-6">
+    			<div class="contact-form">
+					<form action="#" method="post">
+						<input id="name" name="name" type="text" placeholder="Name:" required>
+						<input id="email" name="email" type="email" placeholder="Email:" required>
+						<input id="nationality" name="nationality" type="text" placeholder="nationality:" required>
+						<input id="subject" name="subject" type="subject" placeholder="Subject:" required>
+						<input id="phone" name="phone number" type="number" placeholder="phone number:" required>
+						<textarea id="message" name="message" placeholder="Your Message:" rows="5" required></textarea>
+						<br>
+						<button name="submit" id="submit" type="submit">Send Message</button>
+					</form>
+				</div>  
+			</div>	
+			<div class="col-md-6">
+				<div class="image">
+					<img src="images/output.jpg" class="img-responsive">
+				</div>
+			</div>
+    	</div>
+    	
+		<iframe width="100%;" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="pointer-events: none; margin-top: 30px;" src="images/slide3.jpg"></iframe>
+		
+    </div>
+    
+    
+    <div id="subscribe">
+    	<div class="container">
+    	    <h2>Any advice to me</h2>
+    	    <p>If you want to give advice,enter your email below and give the message by the way follow my insta page @chetanbalaji. </p>
+			<div class="col-md-8 col-md-offset-2">
+             	<form action="#">
+              		<div class="input-group">
+                 		<input class="btn btn-lg" name="email" id="email" type="email" placeholder="Enter your email address" required>
+                 		<button class="btn btn-info btn-lg" type="submit">Submit</button>
+             		 </div>
+            	</form>
+			</div>  
+    	</div>
+    </div>
+    
+	<div class="footer">
+  		<div class="container">
+   			<p class="text-muted">Copyright 2022 | All Rights Reserved.</p>
+  		</div>
+	</div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/jquery.isotope.js"></script>
+    
+    <script src="js/jquery.scrollUp.min.js"></script>
+    
+    
+	<script type="text/javascript">
+	
+	$('a[href^="#"]').on('click', function(event) {
+    	var target = $(this.getAttribute('href'));
+    	if( target.length ) {
+       		event.preventDefault();
+        	$('html, body').stop().animate({
+            	scrollTop: target.offset().top
+        	}, 1000);
+    	}
+	});
+
+	</script>
+    
+    
+    <!-- Navbar Change on Scroll -->
+	<script type="text/javascript">
+		$(function(){
+ 		var shrinkHeader = 100;
+  		$(window).scroll(function() {
+    		var scroll = getCurrentScroll();
+      		if ( scroll >= shrinkHeader ) {
+           		$('.navbar-default').addClass('shrink');
+        	}
+       		else {
+            	$('.navbar-default').removeClass('shrink');
+        	}
+  		});
+		function getCurrentScroll() {
+    		return window.pageYOffset || document.documentElement.scrollTop;
+    	}
+	});
+
+	</script>    
+
+
+	<!-- Portfolio Isotope Settings -->
+	<script type="text/javascript">
+
+	$(window).load(function(){
+  
+  
+ 	 var $container = $('.portfolioContainer'),
+     	$body = $('body'),
+     	colW = 375,
+      	columns = null;
+
+  
+  	$container.isotope({
+    // disable window resizing
+    	resizable: true,
+   	 	masonry: {
+        columnWidth: colW
+    	}
+  	});
+  
+  	$(window).smartresize(function(){
+    // check if columns has changed
+    	var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    	if ( currentColumns !== columns ) {
+      	// set new column count
+      	columns = currentColumns;
+      	// apply width to container manually, then trigger relayout
+      	$container.width( columns * colW )
+        	.isotope('reLayout');
+    	}
+    
+  	}).smartresize(); // trigger resize to set container width
+  	$('.portfolioFilter a').click(function(){
+        	$('.portfolioFilter .current').removeClass('current');
+        	$(this).addClass('current');
+ 
+        	var selector = $(this).attr('data-filter');
+        	$container.isotope({
+			
+            filter: selector,
+         });
+        	 return false;
+   	 	});
+  
+	});
+
+	</script>
+	
+	
+	<!-- Scroll To Top Settings -->
+    <script type="text/javascript">
+    
+    $(function () {
+  		$.scrollUp({
+    		scrollName: 'scrollUp', // Element ID
+    		topDistance: '300', // Distance from top before showing element (px)
+    		topSpeed: 600, // Speed back to top (ms)
+    		animation: 'fade', // Fade, slide, none
+    		animationInSpeed: 200, // Animation in speed (ms)
+    		animationOutSpeed: 200, // Animation out speed (ms)
+    		activeOverlay: true, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    		scrollImg: true,
+  		});
+	});
+    
+    </script>
+
+	
+</body>
+
+</html>
